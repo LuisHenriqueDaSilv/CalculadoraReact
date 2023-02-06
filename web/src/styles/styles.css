@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);
+
+    font-size: 1.6rem;
+
+    overflow: hidden;
+}
+
+body * {
+    font-family: "Rubik";
+    font-weight: 400;
+}
+
+#container {
+    background-color: #2D2A37;
+    width: 35.6rem;
+    height: 56.6rem;
+    border-radius: 4.8rem;
+
+    padding: 5.4rem 3.6rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25), 0 18.8rem 5.2rem rgba(0, 0, 0, 0.01), 0 12.0rem 4.8rem rgba(0, 0, 0, 0.04), 0 6.8rem 4.1rem rgba(0, 0, 0, 0.15), 0 3.0rem 3.0rem rgba(0, 0, 0, 0.26), 0 .8rem 1.7rem rgba(0, 0, 0, 0.29), inset 0 .6rem .8rem rgba(255, 255, 255, 0.1), inset 0 -.4rem .5rem rgba(0, 0, 0, 0.22);
+}
+
+#results {
+    padding: 0 1.8rem;
+}
+
+#calc {
+    height: 2.8rem;
+}
+
+#results p {
+    color: #6B6B6B;
+    font-size: 2rem;
+    text-align: right;
+    line-height: 2.8rem;
+}
+
+#result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    height: 5rem;
+
+    overflow: scroll;
+    overflow-y: hidden;
+
+}
+
+#result::-webkit-scrollbar {
+    height: 1rem;
+}
+  
+#result::-webkit-scrollbar-thumb {
+    background-color: #7F45E2;
+    border-radius: 4px;
+}
+
+#result i {
+    color: #6B6B6B;
+    font-size: 2rem;
+}
+
+#result p {
+    color: #EBEBEB;
+    font-size: 3.6rem;
+    width: 22.8rem;
+    height: fit-content;
+    white-space: nowrap;
+
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+    margin-top: 2.6rem;
+}
+
+#buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.4rem;
+    width: 6.4rem;
+    border-radius: 100%;
+    border: none;
+    font-size: 2.4rem;
+    color: #EBEBEB;
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+}
+
+
+#buttons :not(.lastLine):not(i):not(#equals) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+}
+
+.lastLine {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;;
+}
+
+#equals {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
+}
+
+button:hover {
+    opacity: 0.4;
+}
