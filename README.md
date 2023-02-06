@@ -6,6 +6,8 @@
 <strong>#BoraCodar(5) uma calculadora!</strong>
 <p>Usando como base a interface entregue no desafio 5 do <a href="https://boracodar.dev">#BoraCodar</a>, desenvolvi uma calculadora 100% funcional para a Web! Neste projeto foquei principalmente em fazer melhor uso do <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>. Principalmente para o desenvolvimento de interfaces responsivas!</p>
 
+deploy: https://calculadora-react-orpin.vercel.app
+
 </br></br>
 
 Ferramentas usadas:
